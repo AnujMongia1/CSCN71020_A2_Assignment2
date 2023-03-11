@@ -18,7 +18,7 @@ namespace UnitTestCSCN71020A2
 	public:
 
 
-		TEST_METHOD(getPerimeterTesting)
+		TEST_METHOD(getPerimeterTestCase)
 		{
 
 			int length = 68;
@@ -29,11 +29,11 @@ namespace UnitTestCSCN71020A2
 
 		}
 
-		TEST_METHOD(getAreaTesting)
+		TEST_METHOD(getAreaTestCase)
 		{
 
 			int length = 23;
-			int width = 48;
+			int width = 48; 
 			int expected_area = 1104;
 			int actual_area = getArea(&length, &width);
 			Assert::AreEqual(expected_area, actual_area);
@@ -53,7 +53,7 @@ namespace UnitTestCSCN71020A2
 		{
 
 			int length;
-			int new_length = 192;
+			int new_length = 31;
 			setLength(new_length, &length);
 			Assert::AreEqual(new_length, length);
 
@@ -83,7 +83,7 @@ namespace UnitTestCSCN71020A2
 		{
 
 			int width;
-			int new_width = 173;
+			int new_width = 29;
 			setWidth(new_width, &width);
 			Assert::AreEqual(new_width, width);
 
